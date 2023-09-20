@@ -1,767 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>QRMENU DEMO</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>QRMENU DEMO</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
+  <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+  <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
 
 
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">
+        <img src="../restaurant-website/images/restaurantlogo.png" style="width: 140px; height: 100px;" />
+      </a>
+
+      <div class="d-lg-none">
+        <button type="button" class="custom-btn btn">
+          Sign In
         </button>
-
-        <a class="navbar-brand" href="index.html">
-          <img class="img-logo" src="../2129_crispy_kitchen/images/restaurantlogo.png" style="width: 140px; height: 100px;"/>
-        </a>
-
-        <div class="d-lg-none">
-          <button
-            type="button"
-            class="custom-btn btn"
-          >
-            Sign In
-          </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav max-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">CUSTOMER AREA</a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="customerlogin.html">LOGIN</a></li>
-                <li><a class="dropdown-item" href="customerregister.html">REGISTER</a></li>
-                <li><a class="dropdown-item" href="#">CUSTOMER PANEL</a></li>
-              </ul>
-
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">RESTAURANT AREA</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">LOGIN</a></li>
-                <li><a class="dropdown-item" href="#">REGISTER</a></li>
-                <li><a class="dropdown-item" href="#">CUSTOMER PANEL</a></li>
-              </ul>
-            </li>
-            
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action 1</a></li>
-                  <li><a class="dropdown-item" href="#">Action 2</a></li>
-                  <li><a class="dropdown-item" href="#">Action 3</a></li>
-              </ul>
-            </li> -->
-
-        </div>
-
-        <div class="d-none d-lg-block">
-          <button
-            type="button"
-            class="custom-btn btn btn-danger"
-            data-bs-toggle="modal"
-            data-bs-target="#BookingModal"
-          >
-            Sign In
-          </button>
-        </div>
       </div>
-    </nav>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-12">
-              <div class="heroText">
-                <h2 class="mb-lg-5 mb-3 banner-title">
-                  Order breakfast, lunch, and <br/> dinner.
-                </h2>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav max-auto">
+          <li class="nav-item">
+            <a class="nav-link1 active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
 
-                <div class="slider-address-filed">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="slider-input">
-                        <input
-                          type="text"
-                          placeholder="Search Restraunt"
-                          class="form-control"
-                          id="location_input"
-                          name="address"
-                          required=""
-                        />
+            <a class="nav-link1 dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">CUSTOMER
+              AREA</a>
 
-                        <div class="location-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-geo-alt-fill"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                            ></path>
-                          </svg>
-                        </div>
-                        <div class="current-location-icon">
-                          <a href="javascript:void(0)" id="locationIcon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              id="ic-locate-me-round"
-                              width="24"
-                              height="24"
-                            >
-                              <defs>
-                                <path
-                                  id="a"
-                                  d="M11.5 18a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM12 4v2.019A6.501 6.501 0 0 1 17.981 12H20v1h-2.019a6.501 6.501 0 0 1-5.98 5.981L12 21h-1v-2.019a6.501 6.501 0 0 1-5.981-5.98L3 13v-1h2.019A6.501 6.501 0 0 1 11 6.02V4h1zm-.5 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm0-2.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
-                                ></path>
-                              </defs>
-                              <use fill="#ff3252" xlink:href="#a"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="slider-button">
-                        <button type="submit">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                            ></path>
-                          </svg>
-                          <span id="hero_btn">Find Food</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="customerlogin.html">LOGIN</a></li>
+              <li><a class="dropdown-item" href="customerregister.html">REGISTER</a></li>
+              <li><a class="dropdown-item" href="#">CUSTOMER PANEL</a></li>
+            </ul>
 
-                <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
-                  <p class="w-200" style="color: black">
-                    Lists of top restaurants, cafes, pubs and bars in Melbourne,
-                    based on trends.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
 
-        <div class="video-wrap">
-          <img
-            src="../2129_crispy_kitchen/images/restaurant-image-banner.png"
-            class="custom-video"
-          />
-        </div>
-      </section> 
+          <li class="nav-item dropdown">
+            <a class="nav-link1 dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">RESTAURANT
+              AREA</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">LOGIN</a></li>
+              <li><a class="dropdown-item" href="#">REGISTER</a></li>
+              <li><a class="dropdown-item" href="#">CUSTOMER PANEL</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-      <section class="menu section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="text-left mb-lg-5 mb-4">Browse By Category</h5>
-            </div>
+      <div class="d-none d-lg-block">
+        <button type="button" class="custom-btn btn btn-danger">
+          Sign In
+        </button>
+      </div>
 
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="menu-thumb">
-                    <div class="menu-image-wrap">
-                      <img
-                        src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg"
-                        class="img-fluid menu-image"
-                        alt=""
-                        style="width: 100%; height: 40vh; border-radius: 10px"
-                      />
-                    </div>
+    </div>
+  </nav>
 
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                      <h5 class="mb-0">Morning Fresh</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="menu-thumb">
-                    <div class="menu-image-wrap">
-                      <img
-                        src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg"
-                        class="img-fluid menu-image"
-                        alt=""
-                        style="width: 100%; height: 40vh; border-radius: 10px"
-                      />
-                    </div>
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                      <h5 class="mb-0">Morning Fresh</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="menu-thumb">
-                    <div class="menu-image-wrap">
-                      <img
-                        src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg"
-                        class="img-fluid menu-image"
-                        alt=""
-                        style="width: 100%; height: 40vh; border-radius: 10px"
-                      />
-                    </div>
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                      <h5 class="mb-0">Morning Fresh</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="menu-thumb">
-                    <div class="menu-image-wrap">
-                      <img
-                        src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg"
-                        class="img-fluid menu-image"
-                        alt=""
-                        style="width: 100%; height: 40vh; border-radius: 10px"
-                      />
-                    </div>
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                      <h5 class="mb-0">Morning Fresh</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="news section-padding">
-        <div class="container">
-          <div class="row">
-            <h3 class="text-center mb-lg-1">
-              Featured Restaturents
-            </h3>
-            <p class="text-center mb-lg-1" >Completely network impactful users whereas next-generation <br/>applications engage out thinking via tactical action.</p>
-          </div>
-          
-          <div class="row mt-5">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                  <div class="card featured-cards" style="border-radius: 15px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                          <div class="image-description-container">
-                              <a href="featurerestaturents.html">
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCDZZfnTfo6P6OVAR4PEbLGDBPs3hkIocmS18c9Y6MA&s" alt="Image"
-                                   style="width: 100%; height: 40vh;border-radius: 15px; object-fit: cover;">
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                          <div class="description">
-                              <h6>Seasonal Tastes</h6>
-                              <div class="mt-2" style="color: black; font-size: 20px;">Location: <span>Chittagong</span></div>
-                              <div class="restaturants-middle-area">
-                                <div class="restaturants-price">
-                                    <h6>21 Min</h6>
-                                </div>
-                                <div class="restaturants-icon">
-                                    <div class="delivery-icon">
-                                        <a href="#" data-bs-toggle="tooltip" 
-                                           data-bs-placement="top" 
-                                           title="Delivery Time: 21 Min">
-                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                            <path fill="none" d="M0 0h24v24H0z"></path>
-                                            <path d="M8.365 10L11.2 8H17v2h-5.144L9 12H2v-2h6.365zm.916 5.06l2.925-1.065.684 1.88-2.925 1.064a4.5 4.5 0 1 1-.684-1.88zM5.5 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm13 2a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM4 11h6l2.6-1.733.28-1.046 1.932.518-1.922 7.131-1.822-.888.118-.44L9 16l-1-2H4v-3zm12.092-5H20v3h-2.816l1.92 5.276-1.88.684L15.056 9H15v-.152L13.6 5H11V3h4l1.092 3z">
-                                            </path></svg></a>
-                                    </div>
-                                    <div class="pickup-icon">
-                                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="PickUp Time: 21 Min"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z"></path></svg></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <div class="restaturants-bottom-area mt-4">
-                                <div class="rating-area">
-                                                                             
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                
-                                </div>
-                            </div>
-
-                          </div>
-                      </div>
-                      </div>
-        
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                  <div class="card featured-cards" style="border-radius: 15px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                          <div class="image-description-container">
-                            <a href="featurerestaturents.html">
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCDZZfnTfo6P6OVAR4PEbLGDBPs3hkIocmS18c9Y6MA&s" alt="Image"
-                                   style="width: 100%; height: 40vh;border-radius: 15px; object-fit: cover;"
-                              />
-                            </a>  
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
-                          <div class="description">
-                              <h6>Seasonal Tastes</h6>
-                              <div class="mt-2" style="color: black; font-size: 20px;">Location: <span>Chittagong</span></div>
-                              <div class="restaturants-middle-area">
-                                <div class="restaturants-price">
-                                    <h6>21 Min</h6>
-                                </div>
-                                <div class="restaturants-icon">
-                                    <div class="delivery-icon">
-                                        <a href="#" data-bs-toggle="tooltip" 
-                                           data-bs-placement="top" 
-                                           title="Delivery Time: 21 Min">
-                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                            <path fill="none" d="M0 0h24v24H0z"></path>
-                                            <path d="M8.365 10L11.2 8H17v2h-5.144L9 12H2v-2h6.365zm.916 5.06l2.925-1.065.684 1.88-2.925 1.064a4.5 4.5 0 1 1-.684-1.88zM5.5 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm13 2a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM4 11h6l2.6-1.733.28-1.046 1.932.518-1.922 7.131-1.822-.888.118-.44L9 16l-1-2H4v-3zm12.092-5H20v3h-2.816l1.92 5.276-1.88.684L15.056 9H15v-.152L13.6 5H11V3h4l1.092 3z">
-                                            </path></svg></a>
-                                    </div>
-                                    <div class="pickup-icon">
-                                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="PickUp Time: 21 Min"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z"></path></svg></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <div class="restaturants-bottom-area mt-4">
-                                <div class="rating-area">
-                                                                             
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                     
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"></path></svg>
-                                                                                                                
-                                </div>
-                            </div>
-
-                          </div>
-                      </div>
-                      </div>
-        
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>  
-    </section>  
-
-
-      <section class="news section-padding">
-        <div class="container">
-          <div class="row">
-            <h3 class="text-center mb-lg-1">
-              Find us these cities any many more.
-            </h3>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Something</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some Thing</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some thing</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some Thing</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Something</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some Thing</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some thing</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-12">
-              <div class="news-thumb mb-4 mt-5">
-                <a href="">
-                  <img
-                    src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg"
-                    class="img-fluid news-image"
-                    alt=""
-                  />
-                </a>
-
-                <div class="news-text-info news-text-info-large">
-                  <h5 class="news-title mt-2">
-                    <a href="" class="news-title-link">Some Thing</a>
-                  </h5>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="news section-padding">
-        <div class="container">
-          <div class="row">
-            <h3 class="text-center mb-lg-1">Want to join Partnrship ?</h3>
-
-            <div class="col-lg-6 col-md-6 col-12 mt-5">
-              <div
-                class="card"
-                style="border-radius: 25px; background-color: aliceblue"
-              >
-                <div class="card-body">
-                  <div class="p-4">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJ59TpEIhRlvkPu_QIL6lbv7AMjGkGdjHC7d8AOq0_Q&s"
-                      class="img-fluid"
-                      style="width: 100%; height: 50vh; border-radius: 20px"
-                    />
-                  </div>
-                  <div class="partner-bottom-area">
-                    <h5 id="partnership_left_title">Join As A Delivery Man</h5>
-                    <a
-                      href="http://restaurant.thecompletesoftech.in/rider/register"
-                      >Register Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12 mt-5">
-              <div
-                class="card"
-                style="border-radius: 25px; background-color: aliceblue"
-              >
-                <div class="card-body">
-                  <div class="p-4">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJ59TpEIhRlvkPu_QIL6lbv7AMjGkGdjHC7d8AOq0_Q&s"
-                      class="img-fluid"
-                      style="width: 100%; height: 50vh; border-radius: 20px"
-                    />
-                  </div>
-
-                  <div class="partner-bottom-area">
-                    <h5 id="partnership_left_title">Join As A Delivery Man</h5>
-                    <a
-                      href="http://restaurant.thecompletesoftech.in/rider/register"
-                      >Register Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer section-padding">
+  <main>
+    <section class="hero">
       <div class="container">
         <div class="row">
+          <div class="col-lg-10 col-12">
+            <div class="heroText">
+              <h2 class="mb-lg-5 mb-3 banner-title">
+                Order breakfast, lunch, and <br /> dinner.
+              </h2>
 
-          <div class="col-lg-3 col-md-7 col-xs-12 location">
-            <h6 class="text-black mb-lg-4 mb-3">Location</h6>
-            <li><a href="#"></a>About Us</li>
-            <br/>
-            <li><a href="#"></a>Add Your Restaturents</li>
-            <br/>
-            <li><a href="#"></a>Help</li>
-            <br/>
-            <li><a href="#"></a>My Account</li>
-          </div>
+              <div class="slider-address-filed">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="slider-input">
+                      <input type="text" placeholder="Search Restraunt" class="form-control" id="location_input"
+                        name="address" required="" />
 
-          <div class="col-lg-3 col-md-5 col-xs-12 categories">
-            <h6 class="text-black mb-lg-4 mb-3">Categories</h6>
-            <li><a href="#"></a>Top Categories</li>
-            <br/>
-            <li><a href="#"></a>Best Rated</li>
-            <br/>
-            <li><a href="#"></a>Best Price</li>
-            <br/>
-            <li><a href="#"></a>Latest Submissions</li>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12 contact">
-            <h6 class="text-black mb-lg-4 mb-3">Contacts</h6>
-
-            <ul class="social-icon">
-              <div class="single-cta">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M17.084 15.812a7 7 0 1 0-10.168 0A5.996 5.996 0 0 1 12 13a5.996 5.996 0 0 1 5.084 2.812zM12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                  ></path>
-                </svg>
-
-                <span>97845 Baker <br />
-                  st. 567 Los <br />
-                  Angeles - US</span>
-              </div>
-              <div class="single-cta mt-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path d="M9.366 10.682a10.556 10.556 0 0 0 3.952 3.952l.884-1.238a1 1 0 0 1 1.294-.296 11.422 11.422 0 0 0 4.583 1.364 1 1 0 0 1 .921.997v4.462a1 1 0 0 1-.898.995c-.53.055-1.064.082-1.602.082C9.94 21 3 14.06 3 5.5c0-.538.027-1.072.082-1.602A1 1 0 0 1 4.077 3h4.462a1 1 0 0 1 .997.921A11.422 11.422 0 0 0 10.9 8.504a1 1 0 0 1-.296 1.294l-1.238.884zm-2.522-.657l1.9-1.357A13.41 13.41 0 0 1 7.647 5H5.01c-.006.166-.009.333-.009.5C5 12.956 11.044 19 18.5 19c.167 0 .334-.003.5-.01v-2.637a13.41 13.41 0 0 1-3.668-1.097l-1.357 1.9a12.442 12.442 0 0 1-1.588-.75l-.058-.033a12.556 12.556 0 0 1-4.702-4.702l-.033-.058a12.442 12.442 0 0 1-.75-1.588z">
-
-                  </path></svg>
-
-                <span
-                  >+94 423-23-221</span
-                >
-                
+                      <div class="location-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="current-location-icon">
+                        <a href="javascript:void(0)" id="locationIcon">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            id="ic-locate-me-round" width="24" height="24">
+                            <defs>
+                              <path id="a"
+                                d="M11.5 18a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM12 4v2.019A6.501 6.501 0 0 1 17.981 12H20v1h-2.019a6.501 6.501 0 0 1-5.98 5.981L12 21h-1v-2.019a6.501 6.501 0 0 1-5.981-5.98L3 13v-1h2.019A6.501 6.501 0 0 1 11 6.02V4h1zm-.5 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm0-2.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                              </path>
+                            </defs>
+                            <use fill="#ff3252" xlink:href="#a"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="slider-button">
+                      <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                          class="bi bi-search" viewBox="0 0 16 16">
+                          <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                          </path>
+                        </svg>
+                        <span id="hero_btn">Find Food</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="single-cta mt-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z"></path></svg>
-                <span
-                  >info@gmail.com</span
-                >
-
+              <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
+                <p class="w-200" style="color: black">
+                  Lists of top restaurants, cafes, pubs and bars in Melbourne,
+                  based on trends.
+                </p>
               </div>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12 follow">
-            <h6 class="text-black mb-lg-4 mb-3">Follow Us</h6>
-
-            <ul class="social-icon">
-              <a href="#"
-                ><img src="../2129_crispy_kitchen/images/facebook-img.svg"
-              /></a>
-              <a href="#"
-                ><img src="../2129_crispy_kitchen/images/instagram-image.svg"
-              /></a>
-
-              <a href="" target="_blank"
-                ><img src="../2129_crispy_kitchen/images/twitter-image.svg"
-              /></a>
-
-              <a href="#"
-                ><img src="../2129_crispy_kitchen/images/youtube-image.svg"
-              /></a>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="row">
-            <div class="mt-2">
-              <hr/>
             </div>
-            <div class="col-lg-3 col-md-6 col-xs-12 follow">
-              <ul class="social-icon">
-                <a href="#"
-                  ><img src="../2129_crispy_kitchen/images/payment-footer-image.svg" style="width:70%;"
-                /></a>
-              </ul>
-            </div>
-
+          </div>
         </div>
-        <!-- row ending -->
       </div>
-      <!-- container ending -->
-    </footer>
 
-    <!-- Modal -->
-   
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
+      <div class="video-wrap">
+        <img src="../restaurant-website/images/restaurant-image-banner.png" class="custom-video" />
+      </div>
+    </section>
 
-  </body>
+    <section class="menu section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="text-left mb-lg-5 mb-4">Browse By Category</h5>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="menu-thumb">
+                  <div class="menu-image-wrap">
+                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" class="img-fluid menu-image"
+                      alt="" style="width: 100%; height: 40vh; border-radius: 10px" />
+                  </div>
+
+                  <div class="menu-info d-flex flex-wrap align-items-center">
+                    <h5 class="mb-0">Morning Fresh</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="menu-thumb">
+                  <div class="menu-image-wrap">
+                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" class="img-fluid menu-image"
+                      alt="" style="width: 100%; height: 40vh; border-radius: 10px" />
+                  </div>
+
+                  <div class="menu-info d-flex flex-wrap align-items-center">
+                    <h5 class="mb-0">Morning Fresh</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="menu-thumb">
+                  <div class="menu-image-wrap">
+                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" class="img-fluid menu-image"
+                      alt="" style="width: 100%; height: 40vh; border-radius: 10px" />
+                  </div>
+
+                  <div class="menu-info d-flex flex-wrap align-items-center">
+                    <h5 class="mb-0">Morning Fresh</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="menu-thumb">
+                  <div class="menu-image-wrap">
+                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" class="img-fluid menu-image"
+                      alt="" style="width: 100%; height: 40vh; border-radius: 10px" />
+                  </div>
+
+                  <div class="menu-info d-flex flex-wrap align-items-center">
+                    <h5 class="mb-0">Morning Fresh</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section-padding">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center mb-lg-1">
+            Featured Restaturents
+          </h3>
+          <p class="text-center mb-lg-1">Completely network impactful users whereas next-generation <br />applications
+            engage out thinking via tactical action.</p>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+            <div class="card featured-cards" style="border-radius: 15px;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+                    <div class="image-description-container">
+                      <a href="featurerestaturents.html">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCDZZfnTfo6P6OVAR4PEbLGDBPs3hkIocmS18c9Y6MA&s"
+                          alt="Image" style="width: 100%; height: 40vh;border-radius: 15px; object-fit: cover;">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+                    <div class="description">
+                      <h6>Seasonal Tastes</h6>
+                      <div class="mt-2" style="color: black; font-size: 20px;">Location: <span>Chittagong</span></div>
+                      <div class="restaturants-middle-area">
+                        <div class="restaturants-price">
+                          <h6>21 Min</h6>
+                        </div>
+                        <div class="restaturants-icon">
+                          <div class="delivery-icon">
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delivery Time: 21 Min">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M8.365 10L11.2 8H17v2h-5.144L9 12H2v-2h6.365zm.916 5.06l2.925-1.065.684 1.88-2.925 1.064a4.5 4.5 0 1 1-.684-1.88zM5.5 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm13 2a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM4 11h6l2.6-1.733.28-1.046 1.932.518-1.922 7.131-1.822-.888.118-.44L9 16l-1-2H4v-3zm12.092-5H20v3h-2.816l1.92 5.276-1.88.684L15.056 9H15v-.152L13.6 5H11V3h4l1.092 3z">
+                                </path>
+                              </svg></a>
+                          </div>
+                          <div class="pickup-icon">
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="PickUp Time: 21 Min"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z">
+                                </path>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="restaturants-bottom-area mt-4">
+                        <div class="rating-area">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+            <div class="card featured-cards" style="border-radius: 15px;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+                    <div class="image-description-container">
+                      <a href="featurerestaturents.html">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCDZZfnTfo6P6OVAR4PEbLGDBPs3hkIocmS18c9Y6MA&s"
+                          alt="Image" style="width: 100%; height: 40vh;border-radius: 15px; object-fit: cover;" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6">
+                    <div class="description">
+                      <h6>Seasonal Tastes</h6>
+                      <div class="mt-2" style="color: black; font-size: 20px;">Location: <span>Chittagong</span></div>
+                      <div class="restaturants-middle-area">
+                        <div class="restaturants-price">
+                          <h6>21 Min</h6>
+                        </div>
+                        <div class="restaturants-icon">
+                          <div class="delivery-icon">
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delivery Time: 21 Min">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M8.365 10L11.2 8H17v2h-5.144L9 12H2v-2h6.365zm.916 5.06l2.925-1.065.684 1.88-2.925 1.064a4.5 4.5 0 1 1-.684-1.88zM5.5 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm13 2a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM4 11h6l2.6-1.733.28-1.046 1.932.518-1.922 7.131-1.822-.888.118-.44L9 16l-1-2H4v-3zm12.092-5H20v3h-2.816l1.92 5.276-1.88.684L15.056 9H15v-.152L13.6 5H11V3h4l1.092 3z">
+                                </path>
+                              </svg></a>
+                          </div>
+                          <div class="pickup-icon">
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="PickUp Time: 21 Min"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z">
+                                </path>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="restaturants-bottom-area mt-4">
+                        <div class="rating-area">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z">
+                            </path>
+                          </svg>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="news section-padding">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center mb-lg-1">
+            Find us these cities any many more.
+          </h3>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg" class="img-fluid news-image"
+                  alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Something</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some Thing</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some thing</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some Thing</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg" class="img-fluid news-image"
+                  alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Something</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some Thing</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some thing</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="news-thumb mb-4 mt-5">
+              <a href="">
+                <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="" />
+              </a>
+
+              <div class="news-text-info news-text-info-large">
+                <h5 class="news-title mt-2">
+                  <a href="" class="news-title-link">Some Thing</a>
+                </h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section-padding">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center mb-lg-1">Want to join Partnrship ?</h3>
+
+          <div class="col-lg-6 col-md-6 col-12 mt-5">
+            <div class="card" style="border-radius: 25px; background-color: aliceblue">
+              <div class="card-body">
+                <div class="p-4">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJ59TpEIhRlvkPu_QIL6lbv7AMjGkGdjHC7d8AOq0_Q&s"
+                    class="img-fluid" style="width: 100%; height: 50vh; border-radius: 20px" />
+                </div>
+                <div class="partner-bottom-area">
+                  <h5 id="partnership_left_title">Join As A Delivery Man</h5>
+                  <a href="http://restaurant.thecompletesoftech.in/rider/register">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 mt-5">
+            <div class="card" style="border-radius: 25px; background-color: aliceblue">
+              <div class="card-body">
+                <div class="p-4">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJ59TpEIhRlvkPu_QIL6lbv7AMjGkGdjHC7d8AOq0_Q&s"
+                    class="img-fluid" style="width: 100%; height: 50vh; border-radius: 20px" />
+                </div>
+
+                <div class="partner-bottom-area">
+                  <h5 id="partnership_left_title">Join As A Delivery Man</h5>
+                  <a href="http://restaurant.thecompletesoftech.in/rider/register">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-7 col-xs-12 location">
+          <h6 class="text-black mb-lg-4 mb-3 mt-3">Location</h6>
+          <li><a href="#"></a>About Us</li>
+          <br />
+          <li><a href="#"></a>Add Your Restaturents</li>
+          <br />
+          <li><a href="#"></a>Help</li>
+          <br />
+          <li><a href="#"></a>My Account</li>
+        </div>
+
+        <div class="col-lg-3 col-md-5 col-xs-12 categories">
+          <h6 class="text-black mb-lg-4 mb-3 mt-3">Categories</h6>
+          <li><a href="#"></a>Top Categories</li>
+          <br />
+          <li><a href="#"></a>Best Rated</li>
+          <br />
+          <li><a href="#"></a>Best Price</li>
+          <br />
+          <li><a href="#"></a>Latest Submissions</li>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12 contact">
+          <h6 class="text-black mb-lg-4 mb-3 mt-3">Contacts</h6>
+
+          <ul class="social-icon">
+            <div class="single-cta">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M17.084 15.812a7 7 0 1 0-10.168 0A5.996 5.996 0 0 1 12 13a5.996 5.996 0 0 1 5.084 2.812zM12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                </path>
+              </svg>
+
+              <span>97845 Baker <br />
+                st. 567 Los <br />
+                Angeles - US</span>
+            </div>
+            <div class="single-cta mt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M9.366 10.682a10.556 10.556 0 0 0 3.952 3.952l.884-1.238a1 1 0 0 1 1.294-.296 11.422 11.422 0 0 0 4.583 1.364 1 1 0 0 1 .921.997v4.462a1 1 0 0 1-.898.995c-.53.055-1.064.082-1.602.082C9.94 21 3 14.06 3 5.5c0-.538.027-1.072.082-1.602A1 1 0 0 1 4.077 3h4.462a1 1 0 0 1 .997.921A11.422 11.422 0 0 0 10.9 8.504a1 1 0 0 1-.296 1.294l-1.238.884zm-2.522-.657l1.9-1.357A13.41 13.41 0 0 1 7.647 5H5.01c-.006.166-.009.333-.009.5C5 12.956 11.044 19 18.5 19c.167 0 .334-.003.5-.01v-2.637a13.41 13.41 0 0 1-3.668-1.097l-1.357 1.9a12.442 12.442 0 0 1-1.588-.75l-.058-.033a12.556 12.556 0 0 1-4.702-4.702l-.033-.058a12.442 12.442 0 0 1-.75-1.588z">
+
+                </path>
+              </svg>
+
+              <span>+94 423-23-221</span>
+
+            </div>
+
+            <div class="single-cta mt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z">
+                </path>
+              </svg>
+              <span>info@gmail.com</span>
+
+            </div>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12 follow">
+          <h6 class="text-black mb-lg-4 mb-3 mt-3">Follow Us</h6>
+
+          <ul class="social-icon">
+            <a href="#"><img src="../restaurant-website/images/facebook-img.svg" /></a>
+            <a href="#"><img src="../restaurant-website/images/instagram-image.svg" /></a>
+
+            <a href="" target="_blank"><img src="../restaurant-website/images/twitter-image.svg" /></a>
+
+            <a href="#"><img src="../restaurant-website/images/youtube-image.svg" /></a>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="mt-2">
+          <hr />
+        </div>
+        <div class="col-lg-3 col-md-6 col-xs-12 follow">
+          <ul class="social-icon">
+            <a href="#"><img src="../restaurant-website/images/payment-footer-image.svg" style="width:70%;" /></a>
+          </ul>
+        </div>
+
+      </div>
+      <!-- row ending -->
+    </div>
+    <!-- container ending -->
+  </footer>
+
+  <!-- Modal -->
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    const dropdownItems = document.querySelectorAll(".nav-item.dropdown");
+
+    function handleDropdownClick(item) {
+      const dropdownMenu = item.querySelector(".dropdown-menu");
+      const isVisible = dropdownMenu.style.display === "block";
+
+      if (isVisible) {
+        dropdownMenu.style.display = "none";
+      } else {
+        dropdownMenu.style.display = "block";
+      }
+    }
+
+    function handleScreenSizeChange() {
+      if (window.innerWidth < 767) {
+        dropdownItems.forEach((item) => {
+          item.removeEventListener("mouseenter", handleDropdownHover);
+          item.addEventListener("click", (e) => {
+            e.preventDefault();
+            handleDropdownClick(item);
+          });
+        });
+      } else {
+        dropdownItems.forEach((item) => {
+          item.removeEventListener("click", handleDropdownClick);
+          handleDropdownHover(item);
+        });
+      }
+    }
+    function handleDropdownHover(item) {
+      const dropdownMenu = item.querySelector(".dropdown-menu");
+
+      item.addEventListener("mouseenter", () => {
+        dropdownMenu.style.display = "block";
+      });
+
+      item.addEventListener("mouseleave", () => {
+        dropdownMenu.style.display = "none";
+      });
+    }
+    handleScreenSizeChange();
+    window.addEventListener("resize", handleScreenSizeChange);
+  </script>
+
+</body>
+
 </html>
